@@ -24,9 +24,9 @@ class BillplzsbController extends \yii\web\Controller
             'email' => $email ? $email : 'customer@example.com',
             'name' => $name ? $name : 'John Doe',
             'amount' => $amount ? $amount : 1000, // Amount in cents
-            'callback_url' => 'http://'.$_SERVER['SERVER_NAME'].'/spray/web/index.php?r=billplzsb/callback&param='.$param,
+            'callback_url' => 'http://'.$_SERVER['SERVER_NAME'].'/' . Yii::$app->id . '/web/index.php?r=billplzsb/callback&param='.$param,
             'description' => "some desc.",
-            'redirect_url' => 'http://'.$_SERVER['SERVER_NAME'].'/spray/web/index.php?r=billplzsb/callback&param='.$param
+            'redirect_url' => 'http://'.$_SERVER['SERVER_NAME'].'/' . Yii::$app->id . '/web/index.php?r=billplzsb/callback&param='.$param
             // Add other required parameters for your specific use case
         );
 

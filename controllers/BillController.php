@@ -223,7 +223,7 @@ class BillController extends Controller
             $contact = '6'.$contact;
         }
 
-        $payURL = 'http://'.$_SERVER['SERVER_NAME'].'/spray/web/index.php?r=billplzsb/pay&param='.$hash;
+        $payURL = 'http://'.$_SERVER['SERVER_NAME'] . '/' . Yii::$app->id . '/web/index.php?r=billplzsb/pay&param='.$hash;
 
         // Request body data
         $data = array(

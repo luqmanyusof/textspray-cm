@@ -4,7 +4,7 @@ $params = require __DIR__ . '/params.php';
 $db = require __DIR__ . '/db.php';
 
 $config = [
-    'id' => 'spray',
+    'id' => 'client',
     'name' => 'TextSpray',
     'basePath' => dirname(__DIR__),
     'bootstrap' => ['log'],
